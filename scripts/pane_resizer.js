@@ -27,8 +27,8 @@ paneResizer = (function() {
 	let oldEditorPanePercentage;
 	let oldViewerPanePercentage;
 	// The current sizes of the panes in percentages.
-	let editorPanePercentage = 35;
-	let viewerPanePercentage = 65;
+	let editorPanePercentage = 25;
+	let viewerPanePercentage = 75;
 
 	$.fn.hasScrollBar = function() {
         return this.get(0).scrollHeight > this.innerHeight();
@@ -80,7 +80,7 @@ paneResizer = (function() {
 					const newViewerPanePercentage = (initialRightPaneWidth - deltaPageX) / unit;
 					editorPanePercentage = newEditorPanePercentage;
 					viewerPanePercentage = newViewerPanePercentage;
-					if (editorPanePercentage < minPaneWidth / unit) {
+					if (editorPanePercentage < minPaneWidth/ unit) {
 						editorPanePercentage = minPaneWidth / unit;
 						viewerPanePercentage = 100 - editorPanePercentage;
 					}

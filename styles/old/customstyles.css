@@ -1,3 +1,36 @@
-#stageHolder:hover{
-	cursor:move;
+body {
+  border: none !important;
+}
+
+.kineticjs-content {
+  background-color: #282c34;
+}
+
+td {
+  background-color: #282c34;
+}
+
+#leftPane {
+  padding: 0;
+}
+
+#textHolder {
+  border: none;
+  background: #21252b;
+}
+
+.tabbable {
+  background: #21252b;
+  width: 400px;
+}
+
+#textArea {
+ background-color: #21252b; 
+ color: #000000;
+ font-size: 20px;
+ font-family: 'Andale Mono';
+ margin-left: 00px !important;
+ width: 400px !important;
+ height: 100%;
+ padding-top: 00px;
 }

@@ -1,12 +1,12 @@
 #editor-pane {
 	height: 100%;
-	width: 50%;
+	width: 30%;
 	display: inline-block;
 	background-color: #f0f0f0;
 }
 
 #editor-pane {
-	float: left;
+	float: left;width: 30%;
 }
 
 #editor {
