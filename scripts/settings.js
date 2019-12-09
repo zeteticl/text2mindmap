@@ -6,7 +6,7 @@ settings = (function() {
 	// Default values for various user settings.
 	const defaultValues = {
 		"documentContent": "Text2MindMap\n\tTurn tab-indented lists into mind maps\n\t\tPress Tab to indent lines\n\t\tPress Shift + Tab to unindent lines\n\tDrag nodes to re-organize them\n\tThis project is based on the now dead site Text2MindMap.com",
-		"documentTitle": "Untitled Document"
+		"documentTitle": "沒有名字的文件"
 	};
 
 	// Used for converting settings values to actual font-familys.
