@@ -1,6 +1,6 @@
 (function() {
     if (/Mobi/.test(navigator.userAgent)) {
-        alert("The website doesn't currently work very well in mobile browsers, so it's recommended that you use a computer. Sorry about that!")
+        alert("這MindMap工具並不太適合手機, 推薦你在電腦上使用!")
     }
 
     $(document).ready(function() {
@@ -8,8 +8,8 @@
 
         // Before the user closes the window, warn them if they have unsaved changes.
         $(window).on("beforeunload", function(event) {
-            if (unsavedChanges.getHasChanges() && false ) { //TODO:
-                const message = "You have unsaved changes. Are you sure you want to leave without saving?";
+            if (unsavedChanges.getHasChanges()  ) { //TODO:
+                const message = "你有未儲存的資料. 你確定未儲存就離開?";
                 if (event) {
                     event.returnValue = message;
                 }
