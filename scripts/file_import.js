@@ -1,8 +1,8 @@
 // Logic for importing a Markdown document from the user's lcoal drive.
 // A hidden <input type="file"> tag i clicked and the user is prompted to choose the file.
-fileImport = (function() {
+fileImport = (function () {
 	// Only set up the listener if file reading is supported.
-	$(document).ready(function() {
+	$(document).ready(function () {
 		if (window.FileReader) {
 			$("#file-input").on("change", fileInput);
 		}
@@ -17,7 +17,7 @@ fileImport = (function() {
 			const selectedFile = event.target.files[0];
 			const reader = new FileReader();
 			const fileName = selectedFile.name;
-			reader.onloadend = function(event) {
+			reader.onloadend = function (event) {
 				handleUpload(event, fileName);
 			};
 			reader.readAsText(selectedFile);
@@ -36,7 +36,7 @@ fileImport = (function() {
 		}
 		const content = event.target.result;
 
-		documentTitle.setTitle(fileName.replace("/\.txt$/", ""));
+		documentTitle.setTitle(fileName.replace(/\.txt$/ig, ""));
 		$("#textArea").val(content);
 		mindmap.render();
 		unsavedChanges.setHasChanges(false);
