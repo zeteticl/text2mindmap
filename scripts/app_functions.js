@@ -30,8 +30,10 @@ appFunctions = (function() {
 			const type = ".txt";
 			fileExport.saveFile(content, title, type);
 			unsavedChanges.setHasChanges(false);
-			settings.setSetting("documentTitle", settings.getDefaultValue("documentTitle"));
-			settings.setSetting("documentContent", settings.getDefaultValue("documentContent"));
+			//It will remove the data if Export File.
+			//So remove the code. 
+			//settings.setSetting("documentTitle", settings.getDefaultValue("documentTitle"));
+			//settings.setSetting("documentContent", settings.getDefaultValue("documentContent"));
 		},
 
 		// Set the focus on the input box for renaming the document
