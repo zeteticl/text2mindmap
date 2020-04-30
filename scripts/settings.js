@@ -5,7 +5,7 @@ settings = (function() {
 	
 	// Default values for various user settings.
 	const defaultValues = {
-		"documentContent": "Text2MindMap\n\t這工具可以把TAB(縮進標籤)變成(MindMap)思維導圖\n\t\t在每一行裡按TAB,可以自動縮進\n\t\t按 Shift + Tab 可以反向縮進\n\t右邊的每個點可以直接拉動\n\t\t寫好後別忘了 Ctrl + S 儲存檔案\n\t這工具建基於已關站的 Text2MindMap.com\n\t大項B\n\t大項C\n\t大項D\n\t\t細節B\n\t\t\t細節C\n\t\t\t\t細節D\n\t大項E\n\t大項F",
+		"documentContent": "Text2MindMap\n\t這工具可以把TAB(縮進標籤)變成(MindMap)思維導圖\n\t\t在每一行裡按TAB,可以自動縮進\n\t\t按 Shift + Tab 可以反向縮進\n\t右邊的每個點可以直接拉動\n\t\t寫好後別忘了 Ctrl + S 儲存檔案\n\t這工具建基於已關站的 Text2MindMap.com 及再開發的 https://github.com/tobloef/text2mindmap\n\t大項B\n\t大項C\n\t大項D\n\t\t細節B\n\t\t\t細節C\n\t\t\t\t細節D\n\t大項E\n\t大項F",
 		"documentTitle": "沒有名字的文件"
 	};
 
